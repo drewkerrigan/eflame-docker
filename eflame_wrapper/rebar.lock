@@ -1,0 +1,4 @@
+[{<<"eflame">>,
+  {git,"https://github.com/slfritchie/eflame.git",
+       {ref,"a08518142126f5fc541a3a3c4a04c27f24448bae"}},
+  0}].

@@ -1,0 +1,4 @@
+Cookie = os:getenv("ERL_COOKIE"),
+Host = os:getenv("ERL_HOST"),
+EmuArgs = lists:flatten(io_lib:format("%%! +sbtu +A0 -setcookie ~s -name eflame_wrapper@~s\n", [Cookie, Host])),
+lists:keystore(escript_emu_args, 1, CONFIG, {escript_emu_args, EmuArgs}).

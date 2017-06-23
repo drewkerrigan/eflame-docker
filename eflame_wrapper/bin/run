@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rebar3 clean
+rm -rf _build
+rebar3 escriptize
+
+_build/default/bin/eflame_wrapper hello
